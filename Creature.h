@@ -2,7 +2,7 @@
 #include "Prop.h"
 class Creature
 {
-private:
+protected:
 	int m_xpos, m_ypos;
 	string m_name;
 public:
