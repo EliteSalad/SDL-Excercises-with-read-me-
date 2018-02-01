@@ -15,8 +15,16 @@ private:
 	//private methods
 	int GetDamagePercentage(void);
 public:
+	Prop();
 	Prop(string name, int maxHitPoints, int startHitPoints);
+	
 	void DisplayDetails(void);
+	int getHitpoints(void);
+	void setHitpoints(int points);
+	void addHitpoints(int pointsToAdd);
+	int getMaxHitPoints(void);
+	void setMaxHitPoints(int maxPoints);
+
 	~Prop();
 };
 

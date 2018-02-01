@@ -43,12 +43,13 @@ int main()
 
 	//_getch();
 
-	Hero Player("Xavier" , 10, 10, 3);
+	Hero Player(3, "Xavier", 10, 10);
 	Monster Enemy("Minitour" , 5, 5);
 
 	Enemy.display();
 	Player.display();
-	while (Enemy.eaten == false)
+
+	while (Enemy.eaten(Player) == false)
 	{
 		Enemy.chase(Player);
 		Enemy.display();

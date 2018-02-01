@@ -15,7 +15,7 @@ Creature::~Creature()
 
 void Creature::display()
 {
-	printf("Name: %\n", m_name.c_str());
+	printf("Name: %s\n", m_name.c_str());
 	printf("X %d ", m_xpos);
 	printf("Y %d\n", m_ypos);
 	

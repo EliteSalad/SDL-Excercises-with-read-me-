@@ -1,7 +1,7 @@
 #include "Monster.h"
 
 
-Monster::Monster() :Creature(name, xpos, ypos)
+Monster::Monster(string name, int xpos, int ypos) :Creature(name, xpos, ypos)
 {
 }
 
@@ -28,7 +28,7 @@ void Monster::chase(Hero target)
 
 bool Monster::eaten(Hero target)
 {
-	if (target.GetX == m_xpos && target.GetY == m_ypos)
+	if (target.GetX() == m_xpos && target.GetY() == m_ypos)
 		return true;
 	else
 		return false;

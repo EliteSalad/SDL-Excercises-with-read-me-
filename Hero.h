@@ -9,7 +9,7 @@ public:
 	int m_lives;
 	int m_score;
 	void display();
-	Hero(int lives);
+	Hero(int lives, string name, int xpos, int ypos);
 	~Hero();
 };
 

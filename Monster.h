@@ -1,13 +1,15 @@
 #pragma once
 #include "Hero.h"
+#include <string>
 
 class Monster : public Creature
 {
 private:
-	bool eaten(Hero target);
+	
 public:
+	bool eaten(Hero target);
 	void chase(Hero target);
-	Monster();
+	Monster(string name, int xpos, int ypos);
 	~Monster();
 };
 

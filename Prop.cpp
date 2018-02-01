@@ -21,6 +21,23 @@ void Prop::DisplayDetails(void)
 	printf("Damage : %d%\n", GetDamagePercentage());
 }
 
-Prop::~Prop()
+int Prop::getHitpoints(void)
 {
+	return m_currentHitPoints;
+}
+void Prop::setHitpoints(int points)
+{
+	m_currentHitPoints = points;
+}
+void Prop::addHitpoints(int pointsToAdd)
+{
+	m_currentHitPoints += pointsToAdd;
+}
+int Prop::getMaxHitPoints(void)
+{
+	return m_maxHitPoints;
+}
+void Prop::setMaxHitPoints(int maxPoints)
+{
+	m_maxHitPoints = maxPoints;
 }
